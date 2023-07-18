@@ -119,6 +119,10 @@ img {
   max-width: 100%;
 }
 
+* {
+    font-family:"Poppins",Sans-serif;
+}
+
 
 /*--Container--*/
 
@@ -240,6 +244,7 @@ color:#ffa700;
 
 @media screen and (max-width:500px){
 
+
     .header .header__nav{
         position:absolute;
         background: #2b2b2b;
@@ -283,5 +288,355 @@ color:#ffa700;
         display:block;
     }
 }
+
+
+/*--BANNER--*/
+
+.banner{
+    background: #ffffff;
+    padding-top: 13rem;
+    padding-bottom: 5rem;
+}
+
+.banner .banner__wrapper{
+    display:grid;
+    grid-template-columns:2fr 2fr;
+    align-items: center;
+}
+
+.banner .banner__text h1{
+    font-size:12rem;
+    font-weight:800;
+    color:#ffa700;
+    line-height: 1;
+}
+
+.banner .banner__text p{
+    margin: 4rem 0;
+    max-width: 45rem;
+    text-align: justify;
+}
+
+@media screen and (max-width:500px){
+    .banner .banner__wrapper{
+        display:grid;
+        grid-template-columns: 1fr;
+
+    }
+
+    .banner .banner__text{
+        order:2;
+        text-align: center;
+        margin:0 2rem;
+        margin-top:3rem;
+    }
+
+    .banner .banner__wrapper img{
+        width:20rem;
+        margin: 0 auto;
+    }
+
+    .banner .banner__text h1{
+        font-size:3rem;
+    }
+
+    .banner .banner__text p{
+        margin-top: 2rem;
+        margin-bottom: 5rem;
+    }
+}
+
+/*----HM-SERVICES----*/
+
+.hm-services{
+    background: #2b2b2b;
+    padding: 5rem 0;
+}
+
+.hm-services .hm-services__wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap:8rem;
+}
+
+.hm-services .hm-services__item{
+    text-align:center;
+}
+
+.hm-services .hm-services__item i{
+    color:#ffa700;
+    font-size:7rem;
+}
+
+.hm-services .hm-services__item h4{
+    color:#ffa700;
+    font-weight:600;
+    margin-top:2rem;
+    margin-bottom:3rem;
+}
+
+.hm-services .hm-services__item p{
+    color:white;
+    text-align:justify;
+    margin-bottom:5rem;
+}
+
+@media screen and (max-width:500px){
+
+    
+    .hm-services .hm-services__wrapper{
+        display:unset;
+        display:flex;
+        flex-direction:column;
+        gap:12rem;
+    }
+
+    .hm-services .hm-services__item{
+        margin: 0 4rem;
+    }
+
+    
+}
+
+
+/*----HM-ABOUT----*/
+
+.hm-about{
+    background: #ffffff;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.hm-about .hm-about__wrapper{
+    display:grid;
+    grid-template-columns:2fr 2fr;
+    align-items: center;
+}
+
+.hm-about .hm-about__text{
+    order:1;
+}
+
+.hm-about .hm-about__text h1{
+    font-size:2rem;
+    font-weight:800;
+    color:#ffa700;
+    line-height: 1;
+}
+
+.hm-about .hm-about__text p{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    max-width: 65rem;
+    text-align: justify;
+}
+
+.hm-about .hm-about__text p:first-child{
+    margin-bottom: 2rem;
+    max-width: 65rem;
+    text-align: justify;
+}
+
+
+.hm-about .hm-about_wrapper img{
+    margin: 0 auto;
+}
+
+@media screen and (max-width:500px){
+
+    .hm-about .hm-about__wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .hm-about .hm-about__text{
+        order:1;
+        text-align: center;
+        margin:0 2rem;
+        margin-top:2rem;
+    }
+
+    .hm-about .hm-about__wrapper img{
+        width:20rem;
+        margin: 0 auto;
+    }
+
+    .hm-about .hm-about__text h1{
+        font-size:2.5rem;
+    }
+
+    .hm-about .hm-about__text p{
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }      
+}
+
+/*----HM-CONTACT----*/
+
+.hm-contacts{
+    background: #ffa700;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.hm-contacts .hm-contacts__text{
+    text-align:center;
+}
+
+.hm-contacts .hm-contacts__text h1{
+    font-size:2.5rem;
+    font-weight:800;
+    color:#2b2b2b;
+    line-height: 1;
+}
+
+.hm-contacts .hm-contacts__text p{
+    margin:1rem 0;
+    font-size:2rem;
+    font-weight:500;
+    color:#2b2b2b;
+    line-height: 1;
+}
+
+.hm-contacts .hm-contacts__text a {
+    margin:2rem 0;
+}
+
+@media screen and (max-width:500px){
+
+    .hm-contacts{
+        background: #ffa700;
+        padding-top: 3rem;
+        padding-bottom:1rem;
+    }
+
+    .hm-contacts .hm-contacts__text{
+        text-align:center;
+    }
+    
+    .hm-contacts .hm-contacts__text h1{
+        font-size:1.8rem;
+        font-weight:800;
+        color:#2b2b2b;
+        line-height: 1;
+    }
+    
+    .hm-contacts .hm-contacts__text p{
+        margin:1rem 0;
+        font-size:1.5rem;
+        font-weight:500;
+        color:#2b2b2b;
+        line-height: 1;
+    }
+    
+    .hm-contacts .hm-contacts__text a {
+        margin:2rem 0;
+        font-size:1.5rem;
+    }
+}
+
+/*----LATEST TRENDS----*/
+
+.ltrends{
+    padding:5rem 0;
+    background:#2b2b2b;
+}
+
+.ltrends .ltrends__title h2{
+    color:#ffa700;
+    font-size:4rem;
+    font-weight:600;
+}
+
+.ltrends .ltrends__title p{
+    color:white;
+}
+
+.ltrends .ltrends__wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap:8rem;
+}
+
+.ltrends .ltrends__card{
+    background:white;
+    border-radius:2rem;
+    margin-top:8rem;
+}
+
+.ltrends .ltrends__card img{
+    width:100%;
+}
+
+.ltrends .ltrends__card__text{
+    padding:2rem;
+}
+
+.ltrends .ltrends__card .ltrends__card__text h4{
+    color:#ffa700;
+    font-weight:600;        
+}
+
+.ltrends .ltrends__card .ltrends__card__text p{
+    margin:3rem 0;
+}
+
+.ltrends .ltrends__card .ltrends__card__text a{
+    color:#ffa700;
+}
+
+
+@media screen and (max-width:500px){
+
+    .ltrends .ltrends__wrapper{
+        display:unset;
+        display:flex;
+        flex-direction:column;
+    }
+
+    .ltrends .ltrends__card{
+        margin-left:2rem;
+        margin-right:2rem;
+        border-radius:3rem;
+    }
+
+    .ltrends .ltrends__card:hover{
+        transform:scale(1);
+    }
+
+}
+
+
+/*----REPEATABLE PATTERNS----*/
+
+.btn{
+    display:inline-block;
+    border-radius:5rem;
+    padding: 1rem 2rem;
+    border:1px solid transparent;
+}
+
+.btn.yellow{
+    background:#ffa700;
+    color:white;
+}
+
+.btn.yellow:hover{
+    background:#2b2b2b;
+    border: 1px solid #ffa700;
+    color:#ffa700;
+}
+
+.btn.dark{
+    background:#2b2b2b;
+    color:white;
+}
+
+.btn.dark:hover{
+    background:#ffa700;
+    border: 1px solid #2b2b2b;
+    color:#2b2b2b;
+}
+
 
 
