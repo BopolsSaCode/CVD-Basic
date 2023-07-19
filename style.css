@@ -141,6 +141,7 @@ img {
     position:relative;
     position: fixed;
     width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 .header .branding {
@@ -829,9 +830,30 @@ color:#ffa700;
         text-align:center;
     }
 
-    
 
 }
+
+/*----CONTACTs----*/
+
+.contact{
+    background: #2b2b2b;
+    padding-top: 13rem;
+    padding-bottom: 5rem;
+}
+
+.contact .contact__wrapper{
+    display: grid;
+    grid-template-columns:1.5fr 2.5fr;
+    grid-gap:5rem;
+    margin-top:10rem;
+}
+
+.contact .contact__wrapper .contact__input{
+    display:flex;
+    flex-direction: column;
+}
+
+
 
 /*----REPEATABLE PATTERNS----*/
 
