@@ -1153,6 +1153,7 @@ img {
 
 .services {
   background: #ffffff;
+  padding-top:13rem;
 }
 
 .services .services__content {
@@ -1160,8 +1161,13 @@ img {
   align-items: center;
   justify-content:center;
   gap:35rem;
-  padding-top: 13rem;
-  padding-bottom: 5rem;
+  padding-top: 6rem;
+  padding-bottom: 10rem;
+}
+
+.services .services__content:not(:first-child) {
+  padding-top: 15rem;
+  padding-bottom: 15rem;
 }
 
 .services .services__text h2 {
@@ -1184,19 +1190,36 @@ img {
 .services .services__text p {
   max-width: 45rem;
   text-align: justify;
+  margin:4rem 0;
 }
+
+.services .services__text p:nth-child(3) {
+  margin-top:-2rem;
+}
+
 
 .services .services__text h3 {  
   color:#ffa700;
   font-weight:600;
-  font-size:2.5rem;
+  font-size:3.2rem;
 }
 
 
+.services .services__text p:nth-child(4) {
+  margin:unset;
+}
+
 .services .services__text p:last-child {
-  max-width:16rem;
-  font-size:1.2rem;
+  max-width:14rem;
+  font-size:1rem;
   text-align:unset;
+  margin:unset;
+  font-style:italic;
+}
+
+.services .services__text:last-child p:last-child {
+  max-width:20rem;
+  font-size:1rem;
 }
 
 
