@@ -1,5 +1,3 @@
-//resets//
-
 Details Activity * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1158,28 +1156,27 @@ img {
   justify-content: center;
   gap: 35rem;
   padding-top: 6rem;
-  padding-bottom: 10rem;
 }
 
-.services .services__content:not(:first-child) {
-  padding-top: 15rem;
-  padding-bottom: 15rem;
+.services .services__content:last-child {
+  padding-bottom: 10rem;;
 }
 
 .services .services__text h2 {
-  font-size: 4.5rem;
+  font-size: 5rem;
   font-weight: 800;
   color: #ffa700;
   line-height: 1;
-  margin-bottom: 5 rem;
-  max-width: 38rem;
+  margin-bottom: 5rem;
+  max-width: 45rem;
 }
 
-.services .services__content:nth-child(2) {
+
+.services .services__content:nth-child(3) {
   background: #2b2b2b;
 }
 
-.services .services__content:nth-child(2) p {
+.services .services__content:nth-child(3) p {
   color: white;
 }
 
@@ -1187,10 +1184,11 @@ img {
   max-width: 45rem;
   text-align: justify;
   margin: 4rem 0;
+  line-height: 1.5;
 }
 
 .services .services__text p:nth-child(3) {
-  margin-top: -2rem;
+  margin-top: -1rem;
 }
 
 .services .services__text h3 {
@@ -1203,7 +1201,28 @@ img {
   margin: unset;
 }
 
-.services .services__text p:last-child {
+.services .services__chevron a i {
+  color: #ffa700;
+  font-size: 4rem;
+  padding-bottom: 5rem;
+}
+
+.services .services__chevron {
+  text-align: center;
+}
+
+.services .services__chevron2 a {
+  color: #ffa700;
+  font-size: 4rem;
+}
+
+.services .services__chevron2 {
+  background-color: #2b2b2b;
+  padding-bottom: 5rem;
+  text-align: center;
+}
+
+.services .services__text p:nth-child(6) {
   max-width: 14rem;
   font-size: 1rem;
   text-align: unset;
@@ -1214,6 +1233,91 @@ img {
 .services .services__text:last-child p:last-child {
   max-width: 20rem;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 500px) {
+
+  .services {
+    background: #ffffff;
+    padding-top: 13rem;
+  }
+  
+  .services .services__content {
+    display:flex;
+    flex-direction:column-reverse;
+    gap:unset;
+    padding-top: 5rem;
+  }
+
+  .services .services__content:first-child {
+    padding:3rem;
+  }
+
+  .services .services__content:nth-child(3) {
+    display:flex;
+    flex-direction: column;
+    gap:unset;
+    padding-top: unset;
+    padding: 5rem;
+  }
+
+  .services .services__content:nth-child(3) p {
+    max-width:unset;
+  }
+
+
+  .services .services__content img {
+    width:20rem;
+  }
+
+  .services .services__text {
+    text-align: center;
+  }
+
+  .services .services__text h2 {
+    font-size: 3rem;
+    max-width:50rem;
+    margin-top:2rem;;
+  }
+
+  .services .services__text p {
+    margin-top:2rem;
+    max-width: 40rem;
+  }
+
+  .services .services__text:nth-child(1) p:nth-child(2) {
+    margin: 2rem auto;
+  }
+
+
+  .services .services__text:nth-child(1) p:nth-child(3) {
+    margin: 2rem auto;
+  }
+
+  .services .services__text p:nth-child(4){
+    text-align: center;
+    max-width: unset;
+    margin-top:3rem;
+  }
+
+  .services .services__text p:last-child{
+    text-align: center;
+    max-width: unset;
+  }
+
+  .services .services__text:last-child p:last-child{
+    text-align: center;
+    max-width: unset;
+  }
+
+  .services .services__wrapper{
+    margin: 0 auto;
+  }
+
+  .services .services__chevron {
+    margin-top: 2rem;;
+  }
+
 }
 
 /*----REPEATABLE PATTERNS----*/
